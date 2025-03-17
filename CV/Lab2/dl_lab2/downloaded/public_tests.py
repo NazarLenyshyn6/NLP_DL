@@ -1,7 +1,7 @@
 import numpy as np
 import copy
-from test_utils import single_test, multiple_test
-from testCases_v2 import nn_model_test_case
+from CV.Lab2.dl_lab2.downloaded.test_utils import single_test, multiple_test
+from CV.Lab2.dl_lab2.downloaded.testCases_v2 import nn_model_test_case
 
          
 def layer_sizes_test(target):

@@ -1,0 +1,4 @@
+[] -> Hello world
+[("2025-03-17 23:58:35,327 | dl_lab2_logger | INFO] -> Hello world"
+[2025-03-17 23:58:51,272 | dl_lab2_logger | INFO] -> Hello world
+[2025-03-18 00:12:14,050 | numexpr.utils | INFO] -> NumExpr defaulting to 8 threads.

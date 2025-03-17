@@ -2,7 +2,7 @@ Deap Learning Lab 2
 
 Tasks to be done:
 
-1. Function which will shape of input numpy array.
+1. Function which will shape of input numpy array
 2. Funtion which will return layes sizes base on input and user defined parameter.
 3. Function which will initialize parameter based on give layers sizes.
 4. Object which will be resposible of forard propagation
