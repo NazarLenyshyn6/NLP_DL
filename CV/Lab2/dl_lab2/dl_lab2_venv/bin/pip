@@ -1,4 +1,4 @@
-#!/Users/nazarlenisin/Desktop/NLP_DL/CV/Lab2/dl_lab2_venv/bin/python3
+#!/Users/nazarlenisin/Desktop/DL_LAB2/dl_lab2_venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys

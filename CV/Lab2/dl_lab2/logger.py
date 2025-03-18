@@ -1,7 +1,7 @@
 import os
 import logging
 
-LOG_DIR = '/Users/nazarlenisin/Desktop/NLP_DL/CV/Lab2/dl_lab2/logs'
+LOG_DIR = '/Users/nazarlenisin/Desktop/DL_LAB2/Logs'
 LOG_FILE = os.path.join(LOG_DIR, 'project_logs.log')
 LOGGING_FORMAT = '[%(asctime)s | %(name)s | %(levelname)s] -> %(message)s'
 

@@ -1,21 +1,24 @@
+import numpy as np
 from logger import logger
 from typing import Any
 
-
-def type_check(sample: Any, valid_type: Any) -> bool:
-    ''' 
-    function which validate if input sample of required type
+def type_check(sample: Any, valid_type: Any) -> TypeError | None:
+    ''' Function which validate if input sample has required data type
     
     Args:
-		sample (Any): instance which type has to be validated
-		valid_type (Any): valid type
+		sample (Any): sample which type will be validated.
+		valid_type (Any): valid type of input sample.
   
-	Returns:
-		bool: returns if sample has valid type or not
+	Raises:
+		TypeError: occurs when input sample is not valid_type object
     '''
     
     if not isinstance(sample, valid_type):
-        logger.info('Sample  has invalid type of %s | valid type %s', type(sample), valid_type)
-        raise TypeError('Invalid type of imput sample | valid types: np.ndarray')
-      
-    logger.info('Sample has valid type')
+        logger.info('Invalid type impute sample')
+        raise TypeError('Input sample has to be of type %s instead got %s', valid_type, type(sample))
+    
+    logger.info('Valid type impute sample')
+    
+def sigmoid(X: np.ndarray) -> np.ndarray:
+  type_check(X, np.ndarray)
+  return 1 / (1 + np.e**(-X))
