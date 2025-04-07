@@ -28,7 +28,7 @@ class ForwardPropagation(ForwardPropagationI):
             Z1 = params.W1 @ X + params.b1
             A1 = np.tanh(Z1)
             Z2 = params.W2 @ A1 + params.b2
-            A2 = (1 / 1 + np.e**(-Z2))
+            A2 = (1 / (1 + np.e**(-Z2)))
             logger.info('Forward path done succesfully')
             
             return A2, ForwardPathContainer(Z1=Z1,
@@ -38,10 +38,7 @@ class ForwardPropagation(ForwardPropagationI):
             
         except Exception as e:
             logger.exception(e)
-            raise e
-        
-    
-        
+            raise e    
         
     def __repr__(self) -> str:
         return f"ForwardPropagation()"

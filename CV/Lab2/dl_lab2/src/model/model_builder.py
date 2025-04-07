@@ -52,10 +52,9 @@ class NNModel(Model):
         
         for _ in range(num_iters):
             A2, forward_prop = self.forward_propagation.forward(X_train, self.params)
-            eps = 1e-10 
-            A2 = np.clip(A2, eps, 1 - eps)
+            # eps = 1e-10 
+            # A2 = np.clip(A2, eps, 1 - eps)
             cost = -np.mean(y_train * np.log(A2) + (1 - y_train) * np.log(1 - A2))
-            print(cost)
             back_prop  = self.back_propagation.propagate(self.params, forward_prop, X_train, y_train)
             self.params = self.params - (back_prop * learning_rate).values
             
